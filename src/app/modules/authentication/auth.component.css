@@ -1,5 +1,5 @@
 .background {
-    background-size: cover;
+    background-size: cover !important;
     position: absolute;
     top: 0;
     left: 0;

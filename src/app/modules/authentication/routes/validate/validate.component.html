@@ -1,3 +1,15 @@
-<p>
-  validate works!
-</p>
+<div class="validation__container rounded-border">
+  <div class="auth__header center-text border-box rounded-border font-lg">Validate</div>
+  <div class="validation__form flex-center">
+    <form class="center-text">
+      <label for="username" class="hidden">USERNAME</label><br>
+      <input id="username" name="username" placeholder="Username:" class="auth__input-lg font-md border-box rounded-border"> <br>
+
+      <label for="ValidationCode" class="hidden">PASSWORD</label><br>
+      <input type="password" id="ValidationCode" name="ValidationCode" placeholder="Code:" class="auth__input-lg font-md border-box rounded-border"> <br>
+      <p class="auth__p font-sm margin-top-20">Did not receive an email?</p>
+      <p class="auth__p font-sm">Click <a class="auth__link cursor-pointer text-decoration-none primary-color">here</a> to resend.</p>
+      <button class="auth__button validation__submit rounded-border cursor-pointer">SUBMIT</button>
+    </form>
+  </div>
+</div>
