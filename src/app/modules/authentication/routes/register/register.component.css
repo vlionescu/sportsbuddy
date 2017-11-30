@@ -1,4 +1,4 @@
-.login__container {
+.register__container {
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
   position: absolute;
@@ -10,12 +10,3 @@
   margin-left:-125px;
   background: rgba(0, 0 ,0 , 0.2);
 }
-
-.login__form {
-  font-family: 'Slabo 27px', serif;
-}
-
-.login__submit:hover {
-  background: white;
-}
-

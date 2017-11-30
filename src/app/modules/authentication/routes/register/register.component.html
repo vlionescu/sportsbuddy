@@ -1,6 +1,6 @@
-<div class="login__container rounded-border">
-  <div class="auth__header center-text border-box rounded-border font-lg">Register</div>
-  <div class="login__form flex-center">
+<div class="register__container rounded-border">
+  <div class="auth__header center-text border-box rounded-border font-md">Register</div>
+  <div class="auth__form flex-center">
     <form class="center-text">
       <label for="username" class="hidden">USERNAME</label><br>
       <input id="username" name="username" placeholder="Username:" class="auth__input-lg font-sm border-box rounded-border"> <br>
@@ -12,10 +12,13 @@
       <input id="first-name" name="first-name" placeholder="Name:" class="auth__input-sm font-sm border-box rounded-border">
       <label for="last-name" class="hidden">SURNAME</label>
       <input id="last-name" name="last-name" placeholder="Surname:" class="auth__input-sm font-sm border-box rounded-border"> <br>
-      <label for="email" class="hidden">USERNAME</label><br>
+      <label for="email" class="hidden">EMAIL</label><br>
       <input type="email" id="email" name="email" placeholder="Email:" class="auth__input-lg font-sm border-box rounded-border"> <br>
 
-      <button class="auth__button login__submit rounded-border cursor-pointer">SUBMIT</button>
+      <button class="auth__submit rounded-border cursor-pointer">SUBMIT</button>
+
+      <p class="auth__p register-text font-sm margin-top-20">Here by accident?</p>
+      <p><a class="auth__link text-decoration-none primary-color font-xs register-link cursor-pointer" routerLink="/auth/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Go back to login</a></p>
     </form>
   </div>
 </div>

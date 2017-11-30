@@ -102,7 +102,7 @@ p{
   color: black;
 }
 
-.auth__button {
+.auth__submit {
   font-family: 'Montserrat', sans-serif;
   border: none;
   outline: none;
@@ -112,12 +112,21 @@ p{
   background: rgba(215,215,215, 0.5);
 }
 
+.auth__form {
+  font-family: 'Slabo 27px', serif;
+}
+
+.auth__submit:hover {
+  background: white;
+}
+
+
 .auth__header {
   font-family: 'Montserrat', sans-serif;
   background:rgba(0,128,128,0.8);
   color: white;
   height:50px;
-  padding: 12px 0 13px 0;
+  padding: 18px 0 10px 0;
 }
 
 .auth__input-lg::-webkit-input-placeholder, .auth__input-sm::-webkit-input-placeholder{
