@@ -7,8 +7,10 @@
       <label for="password" class="hidden">PASSWORD</label><br>
       <input type="password" id="password" name="password" placeholder="Password:" class="auth__input-lg font-md border-box rounded-border"> <br>
       <button class="auth__button login__submit rounded-border cursor-pointer">SUBMIT</button>
-      <p class="register-text font-sm">Not registered yet?</p>
-      <button class="auth__button register-button rounded-border cursor-pointer" routerLink="/auth/register" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">SIGN UP</button>
+      <p class="auth__p font-sm margin-top-20">Forgot your password? Click <a class="auth__link cursor-pointer text-decoration-none primary-color">here</a>.</p>
+      <hr class="margin-top-20">
+      <p class="atuh__p register-text font-sm margin-top-20">Don't have an account yet?</p>
+      <p class="auth__p"><a class="auth__link text-decoration-none primary-color font-xs register-link" routerLink="/auth/register" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Create new account</a></p>
     </form>
   </div>
 </div>
