@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Global css classes*/
+p{
+  margin: 0;
+  padding:0;
+}
 .hidden {
   display: none;
 }
@@ -18,7 +22,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.text-decoration-none {
+  text-decoration: none;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -41,7 +47,24 @@
 .font-sm {
   font-size: 12px;
 }
+.font-xs {
+  font-size: 10px;
+}
+.primary-color {
+  color: rgba(0,128,128,0.8);
 
+}
+.primary-bg {
+  background:rgba(0,128,128,0.8);
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
 /* Authentication classes*/
 .auth__input-lg {
   font-family: 'Montserrat', sans-serif;
@@ -90,6 +113,7 @@
 }
 
 .auth__header {
+  font-family: 'Montserrat', sans-serif;
   background:rgba(0,128,128,0.8);
   color: white;
   height:50px;
@@ -110,4 +134,16 @@
 
 .auth__input-lg:-moz-placeholder, .auth__input-sm:-moz-placeholder {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.auth__link:hover {
+  border-bottom: 1px solid rgba(0,128,128,0.8);
+}
+.auth__error-bg {
+  background: rgba(255, 0, 0, 0.2)
 }
