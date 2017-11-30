@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AuthComponent }                from './auth.component';
 import { LoginComponent }               from './routes/login/login.component';
-import { RegisterDataComponent }        from './routes/register-data/register-data.component';
+import { RegisterComponent }        from './routes/register/register.component';
 import { RegisterPreferencesComponent } from './routes/register-preferences/register-preferences.component';
 import { ValidateComponent }            from './routes/validate/validate.component';
 
@@ -19,7 +19,7 @@ import { AuthRoutingModule } from './auth-routing.module';
   declarations: [
     AuthComponent,
     LoginComponent,
-    RegisterDataComponent,
+    RegisterComponent,
     RegisterPreferencesComponent,
     ValidateComponent
   ],
