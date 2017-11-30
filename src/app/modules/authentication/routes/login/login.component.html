@@ -1,3 +1,14 @@
-<p>
-  login works!
-</p>
+<div class="login__container rounded-border">
+  <div class="auth__header center-text border-box rounded-border font-lg">Login</div>
+  <div class="login__form flex-center">
+    <form class="center-text">
+      <label for="username" class="hidden">USERNAME</label><br>
+      <input id="username" name="username" placeholder="Username:" class="auth__input-lg font-md border-box rounded-border"> <br>
+      <label for="password" class="hidden">PASSWORD</label><br>
+      <input type="password" id="password" name="password" placeholder="Password:" class="auth__input-lg font-md border-box rounded-border"> <br>
+      <button class="auth__button login__submit rounded-border cursor-pointer">SUBMIT</button>
+      <p class="register-text font-sm">Not registered yet?</p>
+      <button class="auth__button register-button rounded-border cursor-pointer" routerLink="/auth/register-data" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">SIGN UP</button>
+    </form>
+  </div>
+</div>
