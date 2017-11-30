@@ -14,7 +14,7 @@ export class AuthComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.bgImage = '../../../assets/football.jpg';
+    this.bgImage = '../../../assets/basketball.jpg';
   }
 
 }

@@ -54,9 +54,27 @@
   transition: all 0.5s ease;
 }
 
+.auth__input-sm {
+  font-family: 'Montserrat', sans-serif;
+  width: 100px;
+  height:40px;
+  background: transparent;
+  border: 1px solid rgba(215,215,215, 0.5);
+  color:white;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
 .auth__input-lg:focus{
   outline: none;
   width: 220px;
+  background: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+.auth__input-sm:focus{
+  outline: none;
+  width: 110px;
   background: rgba(255, 255, 255, 1);
   color: black;
 }
@@ -76,4 +94,20 @@
   color: white;
   height:50px;
   padding: 12px 0 13px 0;
+}
+
+.auth__input-lg::-webkit-input-placeholder, .auth__input-sm::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__input-lg::-moz-placeholder, .auth__input-sm::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__input-lg:-ms-input-placeholder, .auth__input-sm:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__input-lg:-moz-placeholder, .auth__input-sm:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
