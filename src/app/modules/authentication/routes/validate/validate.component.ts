@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AuthService } from '../../services/auth.service';
+
 @Component({
   selector: 'app-validate',
   templateUrl: './validate.component.html',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValidateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _authService: AuthService) {
 
+  }
   ngOnInit() {
+    this._authService.setBgImage('validate');
   }
 
 }

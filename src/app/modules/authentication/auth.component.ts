@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// import { AuthService } from './services/auth.service';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-auth',
@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
   bgImage: String;
-  constructor() {
-
+  constructor(private _authService: AuthService) {
+    this._authService.backgroundImageChanged.subscribe((imageURL) => this.bgImage = imageURL)
   }
 
   ngOnInit() {
-    this.bgImage = '../../../assets/volleyball.jpg';
+    this.bgImage = '../../../assets/football.jpg';
   }
 
 }
