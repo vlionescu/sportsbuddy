@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Global css classes*/
+p{
+  margin: 0;
+  padding:0;
+}
+.hidden {
+  display: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.rounded-border {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+.font-xs {
+  font-size: 10px;
+}
+.primary-color {
+  color: rgba(0,128,128,0.8);
+
+}
+.primary-bg {
+  background:rgba(0,128,128,0.8);
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+/* Authentication classes*/
+.auth__input-lg {
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  height:40px;
+  background: transparent;
+  border: 1px solid rgba(215,215,215, 0.5);
+  color:white;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.auth__input-sm {
+  font-family: 'Montserrat', sans-serif;
+  width: 100px;
+  height:40px;
+  background: transparent;
+  border: 1px solid rgba(215,215,215, 0.5);
+  color:white;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.auth__input-lg:focus{
+  outline: none;
+  width: 220px;
+  background: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+.auth__input-sm:focus{
+  outline: none;
+  width: 110px;
+  background: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+.auth__submit {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  background: rgba(215,215,215, 0.5);
+}
+
+.auth__form {
+  font-family: 'Slabo 27px', serif;
+}
+
+.auth__submit:hover {
+  background: white;
+}
+
+
+.auth__header {
+  font-family: 'Montserrat', sans-serif;
+  background:rgba(0,128,128,0.8);
+  color: white;
+  height:50px;
+  padding: 18px 0 10px 0;
+}
+
+.auth__input-lg::-webkit-input-placeholder, .auth__input-sm::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__input-lg::-moz-placeholder, .auth__input-sm::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__input-lg:-ms-input-placeholder, .auth__input-sm:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__input-lg:-moz-placeholder, .auth__input-sm:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth__p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.auth__link:hover {
+  border-bottom: 1px solid rgba(0,128,128,0.8);
+}
+.auth__error-bg {
+  background: rgba(255, 0, 0, 0.2)
+}
