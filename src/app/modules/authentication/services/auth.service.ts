@@ -1,18 +1,24 @@
 import { Injectable } from '@angular/core';
 
-// const bgImages = {
-//   login: 'football.jpg',
-//   register: 'basketball.jpg',
-//   validate: 'tennis.jpg',
-//   forgotPassword: 'volleyball.jpg',
-//   changePassword: 'nfl.jpg'
-// };
+import { Subject } from 'rxjs/Subject';
+
+const bgImages = {
+  login: '../../../assets/football.jpg',
+  register: '../../../assets/basketball.jpg',
+  validate: '../../../assets/tennis.jpg',
+  forgotPassword: '../../../assets/nfl.jpg',
+  changePassword: '../../../assets/volleyball.jpg'
+};
 
 @Injectable()
 export class AuthService {
 
+  public backgroundImage = new Subject<string>();
+  public backgroundImageChanged = this.backgroundImage.asObservable();
+
+
   constructor() { }
-  // static getBgImage(route) {
-  //   return bgImages[route]
-  // }
+  setBgImage(route) {
+    this.backgroundImage.next(bgImages[route]);
+  }
 }
