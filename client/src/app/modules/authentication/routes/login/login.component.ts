@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this._authService.setBgImage('login');
+    this._authService.login().subscribe(() => {}, () => {})
   }
-
+  //asa
 }

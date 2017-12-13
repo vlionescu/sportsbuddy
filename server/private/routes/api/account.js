@@ -1,6 +1,6 @@
 "use strict";
 
-const accountHandler = require('../handlers/account.handler');
+const accountHandler = require('../../handlers/account.handler');
 
 exports.routes = [
     {
