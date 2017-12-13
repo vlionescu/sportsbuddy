@@ -2,7 +2,7 @@
 /*jshint esversion: 6 */
 "use strict";
 
-const authHandler = require('../handlers/auth.handler');
+const authHandler = require('../../handlers/auth.handler');
 exports.routes = [
     {
         method: 'post',
@@ -39,5 +39,4 @@ exports.routes = [
         url: '/decode-token',
         callback: authHandler.decodeToken
     },
-
 ];

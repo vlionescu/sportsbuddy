@@ -1,6 +1,14 @@
 import { Injectable } from '@angular/core';
+import { HttpClient}  from '@angular/common/http';
 
-import { Subject } from 'rxjs/Subject';
+import { Config } from '../../../../assets/config';
+
+import { Subject }    from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/throw';
 
 const bgImages = {
   login: '../../../assets/football.jpg',
@@ -12,12 +20,21 @@ const bgImages = {
 
 @Injectable()
 export class AuthService {
-
+  config = Config;
   public backgroundImage = new Subject<string>();
   public backgroundImageChanged = this.backgroundImage.asObservable();
 
 
-  constructor() { }
+  constructor(
+      private _http: HttpClient
+  ) { }
+
+  login():Observable<any> {
+      return this._http.post(this.config.loginURL, {test: 'test'})
+          .map((response) => response )
+          .catch((error) => error)
+  }
+
   setBgImage(route) {
     this.backgroundImage.next(bgImages[route]);
   }

@@ -26,7 +26,7 @@ const authRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       authRoutes,
-      { enableTracing: true }
+      { enableTracing: false }
     )
   ],
   exports: [
